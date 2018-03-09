@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Blog</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Karma&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        margin: 0; padding: 0;
+        font-family: 'Karma', serif;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url(<%= asset_path 'chart2.jpg' %>);
+    }
+    
+    #wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: white;
+    }
+        
+    h1 {
+        background-color: #3d3c44;
+        color: azure}
+    
+    footer {
+        background-color: #3d3c44;
+    }
+    
+    nav {
+        background-color: #3d3c44;
+    }
+    
+    a.menu {
+        display: inline-block;
+        width: 20%;
+        padding: 15px 30px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+    a.menu:hover{
+        background-color: crimson;
+    }
+    
+    article {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    
+    #tekst {
+        width: 50%;
+        
+        col-xs-5 offset-1
+    }
+    </style>
+
+
+
+<body>
+ <div id="wrapper">
+ <h1><center>Welcome in Alpha Blog</h1></center>
+ <heder>
+     <img src="<%= asset_path 'chart.jpg' %>" alt="background image" style="width: 1000px; height: 280px">
+     </heder>
+     <nav>
+     <a class="menu" href="#">Home</a><a class="menu" href="#">Market News</a><a class="menu" href="#">StockClock®</a><a class="menu" href="#">FX Calendar</a><a class="menu" href="#">About</a>
+     
+ </nav>
+ 
+ <section>
+     
+     <article>
+         <h2 align=center>This is about page</h2>
+         <%= link_to 'Home', root_path %>
+     </article>
+     
+     
+ </section>
+ <footer>Powered by: PanMaciej</footer>
+ 
+</body>
+</html>
