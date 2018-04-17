@@ -37,7 +37,16 @@ $navbar-default-bg: #3d3c44;
 
 .btn-xlarge{
   font-size: 1.7em;
-  background-color: olive;
+  background-color: crimson;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 footer {
